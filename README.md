@@ -6,7 +6,22 @@
 ```bash
 $ docker run -p 6080:80 -v /dev/shm:/dev/shm /tjferrara/argos3
 ```
+
 Visit http://localhost:6080 on your browser of choice, to display the GUI.
+
+ ___
+
+### [ Optional ] Customization 
+```bash
+$ docker run \
+    -e USER=doro \                  # Create a new user
+    -e PASSWORD=password \          # Password for new user
+    -e RESOLUTION=1920x1080 \       # Resolution of VNC
+    -e HTTP_PASSWORD=mypassword \   # Password for VNC
+    -p 6080:80 -v /dev/shm:/dev/shm /tjferrara/argos3
+```
+These options are given by the base image `dorowu/ubuntu-desktop-lxde-vnc`.
+For more customization information, visit https://hub.docker.com/r/dorowu/ubuntu-desktop-lxde-vnc.
 
 ## Build it yourself
 

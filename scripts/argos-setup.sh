@@ -5,6 +5,7 @@ TEMP_DIR=$(mktemp -d)
 cd "$TEMP_DIR" || exit
 
 # Gathering dependencies
+apt update
 export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true
 apt install \
     git g++ cmake libfreeimage-dev libfreeimageplus-dev \
@@ -25,5 +26,5 @@ cp -r /usr/local/lib/argos3 /usr/lib
 ldconfig
 
 # Cleaning up
-cd / || exit
-rm -rf "$TEMP_DIR"
+# cd / || exit
+# rm -rf "$TEMP_DIR"
