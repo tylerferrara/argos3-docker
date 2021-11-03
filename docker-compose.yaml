@@ -1,0 +1,10 @@
+version: "3"
+services:
+  sim:
+    build: .
+    ports:
+      - "6080:80"
+    environment:
+      - RESOLUTION=1920x1080
+    volumes:
+      - /dev/shm:/dev/shm
