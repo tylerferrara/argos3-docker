@@ -17,16 +17,7 @@ git clone https://github.com/ilpincy/argos3.git argos3
 cd argos3 || exit
 mkdir build_simulator
 cd build_simulator || exit
-cmake -DCMAKE_BUILD_TYPE=Debug \
-    -DCMAKE_INSTALL_PREFIX=/usr/local \
-    -DARGOS_BUILD_FOR=simulator \
-    -DARGOS_BUILD_NATIVE=OFF \
-    -DARGOS_THREADSAFE_LOG=ON \
-    -DARGOS_DYNAMIC_LOADING=ON \
-    -DARGOS_USE_DOUBLE=ON \
-    -DARGOS_DOCUMENTATION=ON \
-    -DARGOS_INSTALL_LDSOCONF=ON \
-    ../src
+cmake ../src
 make doc
 make
 make install
