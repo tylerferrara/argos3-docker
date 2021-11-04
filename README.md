@@ -4,11 +4,12 @@
 
 ## Usage
 ```bash
-$ docker run -p 6080:80 -v /dev/shm:/dev/shm /tjferrara/argos3
+$ docker run -p 6080:80 -v /dev/shm:/dev/shm tjferrara/argos3:latest
 ```
 
 Visit http://localhost:6080 on your browser of choice, to display the GUI.
 
+![Argos in browser"](extras/argos-in-browser.png)
  ___
 
 ### [ Optional ] Customization 
@@ -18,7 +19,7 @@ $ docker run \
     -e PASSWORD=password \          # Password for new user
     -e RESOLUTION=1920x1080 \       # Resolution of VNC
     -e HTTP_PASSWORD=mypassword \   # Password for VNC
-    -p 6080:80 -v /dev/shm:/dev/shm /tjferrara/argos3
+    -p 6080:80 -v /dev/shm:/dev/shm tjferrara/argos3:latest
 ```
 These options are given by the base image `dorowu/ubuntu-desktop-lxde-vnc`.
 For more customization information, visit https://hub.docker.com/r/dorowu/ubuntu-desktop-lxde-vnc.
