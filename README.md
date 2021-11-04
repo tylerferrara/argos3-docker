@@ -1,4 +1,6 @@
 # ARGoS in Docker
+![GitHub](https://img.shields.io/github/license/tylerferrara/argos3-docker)
+![Docker Image Size (tag)](https://img.shields.io/docker/image-size/tjferrara/argos3/latest?logo=docker)
 
 > Portable robot simulation environment, using [ARGoS](https://github.com/ilpincy/argos3). Built within docker containers & displayed via browser-based VNC (noVNC), ARGoS should now be accessable on **all platforms**.
 
